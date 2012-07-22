@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>WFCore test</title>
+  </head>
+  <body>
+		<div class="content">
+	
+		</div>
+    	<script type="text/javascript" src="jam/require.js"></script>
+    	<script type="text/javascript">
+        require(['js/app'], function (app) {
+            var sheet = app.generateSheet(1234, 0, 200);
+            console.log(JSON.stringify(sheet));
+        });
+    </script>
+  </body>
+</html>
