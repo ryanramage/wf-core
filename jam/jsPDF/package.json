@@ -1,0 +1,18 @@
+{
+  "name": "jsPDF",
+  "description": "Generating PDF files purely in Javascript",
+  "version": "1.0.0",
+  "homepage": "http://jspdf.com/",
+  "author": "James Hall <james@snapshotmedia.co.uk> (http://snapshotmedia.co.uk/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrRio/jsPDF"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/MrRio/jsPDF/blob/master/MIT-LICENSE.txt"
+    }
+  ],
+  "main": "jspdf.amd.min.js"
+}

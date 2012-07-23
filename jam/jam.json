@@ -1,6 +1,8 @@
 {
     "jam_version": "0.1.0",
     "dependencies": {
-        "simple-uuid": null
+        "simple-uuid": null,
+        "store": null,
+        "jsPDF": null
     }
 }

@@ -10,10 +10,19 @@
 		</div>
     	<script type="text/javascript" src="jam/require.js"></script>
     	<script type="text/javascript">
-        require(['js/app'], function (app) {
-            var sheet = app.generateSheet(1234, 0, 200);
-            console.log(JSON.stringify(sheet));
+        require(['js/wf-core'], function (wf_core) {
+            var sheet = wf_core.generateSheet(1234, 0, 85);
+            var card = wf_core.generateCard(1234, 'Free Sushi', 5);
+            wf_core.addPunchToCard(card, sheet.codes[0].punchCode);
+            wf_core.preValidate(card);
+            var doc = wf_core.generateSheetPDF(sheet);
+            var pdf = doc.output('datauristring');
+            console.log(sheet);
+            document.getElementById('pdf').setAttribute('href', pdf);
         });
     </script>
+
+    <a href="#" id="pdf">Sheet</a>
+
   </body>
 </html>

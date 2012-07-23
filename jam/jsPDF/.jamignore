@@ -1,0 +1,8 @@
+doc
+examples
+libs
+test
+tools
+jspdf.js
+jspdf.min.js
+wscript.py
